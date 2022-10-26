@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Calculo de IMC </h2>
+                        <form>
+                            <div class="form-group mr-2">
+                                <label for="nome">Nome</label>
+                                <input type="text" placeholder="Digite seu nome" class="form-control" id="nome">
+                            </div>
+                            <div class="form-group mr-2">
+                                <label for="altura">Altura</label>
+                                <input type="text" placeholder="Digite sua altura (ex: 1.75 )" class="form-control" id="altura">
+                            </div>
+                            <div class="form-group mr-2">
+                                <label for="peso">Peso</label>
+                                <input type="text" placeholder="Digite o seu peso (ex: 77.8 )" class="form-control" id="peso">
+                            </div>
+                            <div class="alert alert-info" id="resultado">Resultado</div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary btn-block" onclick="calcularImc()">Calcular</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
